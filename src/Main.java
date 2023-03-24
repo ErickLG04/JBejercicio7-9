@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Vector;
@@ -75,23 +74,18 @@ public class Main {
 
         }
 
-        try {
-            Divide(7,2);
-
-        } catch (Exception e) {
-            System.out.println("Esto no puedo hacerse");
+        try{
+            System.out.println("resultado: " + Divide(3,4) );
+        }catch (ArithmeticException e){
+            System.out.println("esto no puede hacerce");
+        }finally {
+            System.out.println("demo");
         }
     }
-    public static int Divide(int A , int B ) throws ArithmeticException, IOException{
-        int result = 0;
 
-        try {
-            result = A / B;
-        } catch (ArithmeticException e) {
-            throw new IOException();
-        }
+            public static int Divide(int a, int b) throws ArithmeticException {
 
-        return result;
+                return a/b;
+            }
 
-    }
 }

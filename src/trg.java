@@ -5,9 +5,10 @@ import static java.lang.System.out;
 
 public class trg {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        
+        CopiarFichero("C:\\Users\\erick\\Documents\\fichero.txt", "C:\\Users\\erick\\Documents\\passwrd");
+
     }
 
 
